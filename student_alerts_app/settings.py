@@ -28,9 +28,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
  
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'message-alert.azurewebsites.net', 'message-alert-hpgmdhewb8c7gfdd.centralindia-01.azurewebsites.net']
+
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
