@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
  
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'message-alert.azurewebsites.net', 'message-alert-hpgmdhewb8c7gfdd.centralindia-01.azurewebsites.net']
 
@@ -63,7 +63,7 @@ ROOT_URLCONF = 'student_alerts_app.urls'
 
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Template configuration
