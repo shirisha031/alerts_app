@@ -33,7 +33,7 @@ CSRF_TRUSTED_ORIGINS = [
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'message-alert.azurewebsites.net', 'message-alert-hpgmdhewb8c7gfdd.centralindia-01.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application references
@@ -93,14 +93,14 @@ WSGI_APPLICATION = 'student_alerts_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE'),
-        'USER': os.environ.get('MYSQL_USER'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
-        'HOST': os.environ.get('MYSQL_HOST'),
+        'NAME': 'institue_db',
+        'USER': 'connect_admin@django-web',
+        'PASSWORD': 'root',
+        'HOST': 'django-web.mysql.database.azure.com',
         'PORT': os.environ.get('MYSQL_PORT', '3306'),
         'OPTIONS': {
             'ssl': {
-                'ca': os.path.join(BASE_DIR, 'certificates/DigiCertGlobalRootG2.crt.pem'),
+                'ca': os.path.join(BASE_DIR, 'C:\Users\Admin\Downloads\student_alerts_app\certificates\DigiCertGlobalRootG2.crt.pem'),
             },
 
         },
