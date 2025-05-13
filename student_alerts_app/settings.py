@@ -33,7 +33,7 @@ CSRF_TRUSTED_ORIGINS = [
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'message-alert.azurewebsites.net', 'message-alert-hpgmdhewb8c7gfdd.centralindia-01.azurewebsites.net']
 
 
 # Application references
