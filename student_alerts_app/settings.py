@@ -143,6 +143,10 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 TIME_ZONE = 'Asia/Kolkata'
 USE_TZ = True
 
+TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
+TWILIO_WHATSAPP_NUMBER = os.getenv('TWILIO_WHATSAPP_NUMBER')
+TWILIO_SMS_NUMBER = os.getenv('TWILIO_SMS_NUMBER')
 
 
 
